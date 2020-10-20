@@ -15,9 +15,5 @@ https://wagame.coderbridge.io
 
 ![](https://static.coderbridge.com/img/mrwang01/5dd9afd1e97146a0814fb514c179b8d8.png)
 
-<iframe height="400px" width="100%" src="https://repl.it/@wastu01/LotteryNumber?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-
-
 
 
