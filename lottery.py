@@ -25,35 +25,35 @@ for num in soup.select('span'):
 
 
 
-'''special_ball 特別號'''
-special_ball = []
+'''luckyball 特別號'''
+luckyball = []
 for div in soup.select('div'):
 	match = re.search(r'^<div class="ball_red">(.*?)<',str(div))
 	if match:
-		special_ball.append(match.group(1))
+		luckyball.append(match.group(1))
+## 威力彩，大樂透的特別號
 
-def wiili():
-	wiili_1 = []
-	wiili_2 = []
+def biglottery():
+	biglottery_1 = []
+	biglottery_2 = []
 	n = 0
 	for div in soup.select('div'):
-		match = re.search('^<div class="ball_tx ball_green">(.*?)<',str(div))
+		match = re.search('^<div class="ball_tx ball_yellow">(.*?)<',str(div))
 		if match:
 			n += 1
-			if n <= 6:
-				wiili_1.append(match.group(1))
-			elif 6 < n <= 12:
-				wiili_2.append(match.group(1))
-	print("------------------威力彩------------------")
-	print("-----------------38樂合彩-----------------")
+			if 21 <= n <= 26:
+				biglottery_1.append(match.group(1))
+			elif 27 < n <= 32:
+				biglottery_2.append(match.group(1))
+	print("------------------大樂透------------------")
 	print(date[1],periods[1])
-	print('開出順序：',' '.join(wiili_1))
-	print('大小順序：',' '.join(wiili_2))
-	print('第二區號碼：         ',int(special_ball[1]))
+	print('開出順序：',' '.join(biglottery_1))
+	print('大小順序：',' '.join(biglottery_2))
+	print('特別號碼：         ',int(luckyball[2]))
 	print("-----------------這是虛線------------------")
 	print("***********買彩券、做公益、積功德************")
 
 
 
 
-wiili()
+biglottery()

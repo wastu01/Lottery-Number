@@ -7,9 +7,30 @@
 > NTCU AI course
 > Teacher :Professor Chih-Hung Wu in NTCU DCT
 > Student : https://medium.com/mr-wang
+
+### 摘要
+
+
+```
+分析網頁
+開獎號碼 依據彩球號碼為分類
+全部的開獎日期及期數 都有固定格式
+可以用課堂學的正則表達式去撈資料
+
+把開獎日期及期數先存在一個 group
+特別號另外去找放進一個 group
+
+之後要爬全部的時候方便查詢
+
+```
+
+
+
+
+
 ### 筆記整理:
 
-https://wagame.coderbridge.io
+[https://wa01.coderbridge.io](https://wagame.coderbridge.io)
 
 ### 執行畫面：
 
