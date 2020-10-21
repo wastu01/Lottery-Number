@@ -9,7 +9,7 @@ soup = BeautifulSoup(url.text,'html.parser')
 date    = []
 periods = []
 for num in soup.select('span'):
-	match = re.search('<span class="font_black15">(.*?)(.*?)</span>',str(num))
+	match = re.search(r'<span class="font_black15">(.*?)(.*?)</span>',str(num))
 	if match:
 		date.append(match.group(1))
 		periods.append(match.group(2))
